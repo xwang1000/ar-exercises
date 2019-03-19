@@ -10,5 +10,3 @@ puts "----------"
 
 @store1.name = 'Richmond'
 @store1.save
-
-puts @store1.name
