@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts Store.count
+puts "Please enter store name: "
+store_name = gets.chomp
+
+newStore = Store.create(name: store_name)
+
+puts newStore.errors.full_messages
+puts "There are #{Store.count} stores."
